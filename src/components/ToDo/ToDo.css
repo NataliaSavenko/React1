@@ -1,0 +1,39 @@
+.text-primary{
+    color:blue;
+}
+
+.todo-list
+{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.task
+{
+    display: flex;
+    padding: 5px;
+}
+
+.task button
+{
+    margin-left: auto;
+}
+
+.done
+{
+    text-decoration: line-through;
+}
+
+.film-list
+{
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.container
+{
+    border-style: groove;
+    background-size:2px;
+    margin-top: 50px;
+}
