@@ -1,0 +1,12 @@
+.navbar
+{
+    background-color: rgb(63, 56, 56);
+    padding: 10px;
+    text-align: center;
+}
+.link
+{
+    color: azure;
+    text-decoration: none;
+    margin-right: 20px;
+}

@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import ToDoList from './components/ToDo/ToDoList';
 
+import Header from './components/Header/Header';
+import { Outlet } from 'react-router-dom';
 function App() {
   return (
-    <ToDoList/>
+
+    <div>
+    <Header/>
+    <Outlet/>
+    </div>
+
   );
 }
 

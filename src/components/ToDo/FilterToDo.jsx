@@ -1,20 +1,16 @@
-import React from 'react';
+import React from "react";
+import FilterButton from "./FilterButton";
 
-const FilterToDo = () => {
-    return (
-        <div>
+const FilterToDo = ({ filter, setFilter, FILTER_MAP }) => {
+  const buttonNames = Object.keys(FILTER_MAP); // ['All', 'ToDo', 'Done']
 
-      
-
-            <button>All</button>
-            <button>ToDo</button>
-            <button>Done</button>
-        </div> 
-
-
-
-       
-    );
-}
+  return (
+    <div>
+      {buttonNames.map((item) => (
+        <FilterButton key={item} name={item} setFilter={setFilter} isPressed={filter === item} />
+      ))}
+    </div>
+  );
+};
 
 export default FilterToDo;
