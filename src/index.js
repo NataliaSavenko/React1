@@ -9,6 +9,10 @@ import Counter from './components/Counter/Counter';
 import FilmList from './components/FilmsList/FilmList';
 import Users from './components/Users/Users';
 import User from './components/Users/User';
+import Categories from './components/Products/Categories';
+
+import Category from './components/Products/Category';
+
 
 
 const router=createBrowserRouter([
@@ -35,6 +39,23 @@ const router=createBrowserRouter([
         element: <FilmList/>
       },
 
+      {
+        path: '/categories',
+        element: <Categories/>
+        
+      },
+      {
+        path: '/category',
+        element: <Category/>,
+        /*children:[
+          {
+            path: ':id',
+            element: <Category.id/>
+          },
+        ]*/
+      },
+     
+      
       {
         path: '/users',
         element: <Users/>,
